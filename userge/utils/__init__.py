@@ -1,7 +1,6 @@
-from .aiohttp_helper import get_response
-from .botapi import XMediaTypes as xmedia
-from .botapi import xbot
+from .aiohttp_helper import AioHttp as get_response
 from .functions import (
+    AttributeDict,
     check_owner,
     cleanhtml,
     deEmojify,
@@ -13,8 +12,8 @@ from .functions import (
     rand_key,
     thumb_from_audio,
 )
-from .progress import progress  # noqa
-from .sys_tools import SafeDict, get_import_path, secure_text, terminate  # noqa
+from .progress import progress
+from .sys_tools import SafeDict, get_import_path, secure_text, terminate
 from .tools import (
     get_file_id,
     humanbytes,
